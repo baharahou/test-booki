@@ -14,12 +14,7 @@ describe("Given I am connected as an employee", () => {
       Object.defineProperty(window, "localStorage", {
         value: localStorageMock,
       });
-      window.localStorage.setItem(
-        "user",
-        JSON.stringify({
-          type: "Employee",
-        })
-      );
+    
 
       const root = document.createElement("div");
       root.setAttribute("id", "root");
